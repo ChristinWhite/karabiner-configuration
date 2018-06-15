@@ -1,0 +1,4169 @@
+{
+  "title": "Launch Modes",
+  "rules": [
+    {
+      "description": "Action Mode",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f1",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "action_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "b"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "action_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "action_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f1",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f2",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "action_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "b"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "action_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "action_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f2",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f3",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "action_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "b"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "action_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "action_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f3",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "option"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f4",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "action_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "b"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "action_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+                "option"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "action_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f4",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f5",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "action_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "b"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "action_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "action_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f5",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "0",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application\"Moom\"' -e 'center frontmost window geometrically' -e 'end tell'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "launch_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "0"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "launch_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "launch_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application\"Moom\"' -e 'center frontmost window geometrically' -e 'end tell'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "hyphen",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f6",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "launch_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "hyphen"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "launch_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "launch_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f6",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "equal_sign",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f7",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "launch_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "equal_sign"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "launch_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "launch_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f7",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f8",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "launch_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "open_bracket"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "launch_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "launch_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f8",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f9",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "launch_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "close_bracket"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "launch_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "launch_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f9",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f10",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "launch_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "open_bracket"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "launch_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "launch_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f10",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "backslash",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f11",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "launch_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "backslash"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "launch_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "launch_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f11",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f12",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "launch_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "close_bracket"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "launch_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "launch_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f12",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f13",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "launch_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "comma"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "launch_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "launch_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f13",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "period",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f14",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "launch_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "period"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "launch_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "launch_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f14",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f15",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "launch_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "semicolon"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "launch_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "launch_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f15",
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"4B75D6B9-61F0-4F93-AB7F-7CC998E81E51\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "action_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "u"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "action_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "action_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"4B75D6B9-61F0-4F93-AB7F-7CC998E81E51\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "x",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f16",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "action_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "x"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "action_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "action_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f16",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "1",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f17",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "action_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "1"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "action_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "action_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f17",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "2",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f18",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "action_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "2"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "action_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "action_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f18",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "3",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f19",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "action_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "3"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "action_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "action_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f19",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "4",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f20",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "action_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "z"
+              },
+              {
+                "key_code": "4"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "action_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "action_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f20",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        }
+      ]
+    },
+    {
+      "description": "Alfred Mode",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"doMacro\" in workflow \"iansinnott.keyboardmaestro\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "alfred_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "a"
+              },
+              {
+                "key_code": "k"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "alfred_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "alfred_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"doMacro\" in workflow \"iansinnott.keyboardmaestro\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"scripts\" in workflow \"net.deanishe.alfred-appscripts\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "alfred_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "a"
+              },
+              {
+                "key_code": "s"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "alfred_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "alfred_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"scripts\" in workflow \"net.deanishe.alfred-appscripts\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"fantastical\" in workflow \"com.robertboehnke.alfred.fantastical\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "alfred_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "a"
+              },
+              {
+                "key_code": "f"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "alfred_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "alfred_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"fantastical\" in workflow \"com.robertboehnke.alfred.fantastical\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"searchMenuBar\" in workflow \"com.tedwise.menubarsearch\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "alfred_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "a"
+              },
+              {
+                "key_code": "m"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "alfred_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "alfred_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"searchMenuBar\" in workflow \"com.tedwise.menubarsearch\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"searchTabs\" in workflow \"com.clintonstrong.SearchTabs\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "alfred_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "a"
+              },
+              {
+                "key_code": "w"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "alfred_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "alfred_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"searchTabs\" in workflow \"com.clintonstrong.SearchTabs\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"bing\" in workflow \"net.deanishe.alfred-searchio\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "alfred_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "a"
+              },
+              {
+                "key_code": "b"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "alfred_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "alfred_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"bing\" in workflow \"net.deanishe.alfred-searchio\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"searchSnippetsLab\" in workflow \"com.renfei.SnippetsLab.AlfredWorkflow\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "alfred_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "a"
+              },
+              {
+                "key_code": "l"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "alfred_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "alfred_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"searchSnippetsLab\" in workflow \"com.renfei.SnippetsLab.AlfredWorkflow\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        }
+      ]
+    },
+    {
+      "description": "Bear Mode",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to search \"Bear \"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "bear_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "b"
+              },
+              {
+                "key_code": "spacebar"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "bear_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "bear_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to search \"Bear \"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"newBearNote\" in workflow \"com.chrisbro.bear\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "bear_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "b"
+              },
+              {
+                "key_code": "c"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "bear_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "bear_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"newBearNote\" in workflow \"com.chrisbro.bear\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"searchBear\" in workflow \"com.chrisbro.bear\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "bear_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "b"
+              },
+              {
+                "key_code": "s"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "bear_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "bear_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"searchBear\" in workflow \"com.chrisbro.bear\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"searchBearTag\" in workflow \"com.chrisbro.bear\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "bear_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "b"
+              },
+              {
+                "key_code": "t"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "bear_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "bear_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Alfred 3\" to run trigger \"searchBearTag\" in workflow \"com.chrisbro.bear\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "option"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"2E864E28-4288-4FB4-927D-61546A2E8805\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "bear_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "b"
+              },
+              {
+                "key_code": "c"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "bear_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+                "option"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "bear_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"2E864E28-4288-4FB4-927D-61546A2E8805\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"BF7F09AC-36B9-4A04-A594-79383A25FC0D\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "bear_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "b"
+              },
+              {
+                "key_code": "c"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "bear_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "bear_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"BF7F09AC-36B9-4A04-A594-79383A25FC0D\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"CA6F631E-5440-4DCF-8228-76523FD9E966\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "bear_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "b"
+              },
+              {
+                "key_code": "c"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "bear_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "bear_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"CA6F631E-5440-4DCF-8228-76523FD9E966\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        }
+      ]
+    },
+    {
+      "description": "Palettes Mode",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "1",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"A849F0C3-2743-4023-A1D3-12CC4FCD106B\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "palettes_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "p"
+              },
+              {
+                "key_code": "1"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "palettes_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "palettes_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"A849F0C3-2743-4023-A1D3-12CC4FCD106B\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"185780B3-6875-453F-8D0F-D925E2E03FF0\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "palettes_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "p"
+              },
+              {
+                "key_code": "c"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "palettes_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "palettes_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"185780B3-6875-453F-8D0F-D925E2E03FF0\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f3",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "palettes_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "p"
+              },
+              {
+                "key_code": "d"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "palettes_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "palettes_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f3",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open x-fantastical2://show/mini"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "palettes_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "p"
+              },
+              {
+                "key_code": "f"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "palettes_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "palettes_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "open x-fantastical2://show/mini"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f5",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "palettes_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "p"
+              },
+              {
+                "key_code": "h"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "palettes_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "palettes_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f5",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"C11F2723-618F-4CA6-B829-1D2C86207C65\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "palette_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "p"
+              },
+              {
+                "key_code": "k"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "palette_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "palette_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"C11F2723-618F-4CA6-B829-1D2C86207C65\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f4",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "palettes_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "p"
+              },
+              {
+                "key_code": "l"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "palettes_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "palettes_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f4",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f1",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "palettes_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "p"
+              },
+              {
+                "key_code": "q"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "palettes_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "palettes_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f1",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "x",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f2",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "palettes_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "p"
+              },
+              {
+                "key_code": "x"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "palettes_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "palettes_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f2",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "option"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Things3\"' -e 'show quick entry panel' -e 'end tell'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "palettes_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "p"
+              },
+              {
+                "key_code": "t"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "palettes_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+                "option"
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "palettes_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Things3\"' -e 'show quick entry panel' -e 'end tell'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Things3\"' -e 'show quick entry panel with autofill yes' -e 'end tell'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "palettes_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "p"
+              },
+              {
+                "key_code": "t"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "palettes_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "palettes_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Things3\"' -e 'show quick entry panel with autofill yes' -e 'end tell'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "w",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f8",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "palettes_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "p"
+              },
+              {
+                "key_code": "w"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "palettes_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "palettes_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f8",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "y",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f10",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "palette_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "p"
+              },
+              {
+                "key_code": "y"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "palette_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "palette_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f10",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        }
+      ]
+    },
+    {
+      "description": "Window Mode Mode",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f6",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "window_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "t"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "window_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "window_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f6",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"AB8CC6A1-E0D0-4D23-B36E-36823030FDDE\"'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "window_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "f"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "window_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "window_mode",
+                "value": 1
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"AB8CC6A1-E0D0-4D23-B36E-36823030FDDE\"'"
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f7",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "window_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "c"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "window_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "window_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f7",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f9",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "window_mode",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "w"
+              },
+              {
+                "key_code": "n"
+              }
+            ],
+            "simultaneous_options": {
+              "key_down_order": "strict",
+              "key_up_order": "strict_inverse",
+              "to_after_key_up": [
+                {
+                  "set_variable": {
+                    "name": "window_mode",
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            "modifiers": {
+              "mandatory": [
+
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "window_mode",
+                "value": 1
+              }
+            },
+            {
+              "key_code": "f9",
+              "modifiers": [
+                "control",
+                "option",
+                "shift"
+              ]
+            }
+          ],
+          "parameters": {
+            "basic.simultaneous_threshold_milliseconds": 500
+          }
+        }
+      ]
+    }
+  ]
+}
